@@ -13,10 +13,12 @@ run a middleman server with
 
     $ middleman 
 
-and connect to.
+and connect to
 
     http://localhost:4567
 
 When you're done, commit your changes and do
+
     $ middleman deploy
+
 which will build and upload the site.
