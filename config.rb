@@ -70,3 +70,14 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Middleman Deploy Configuration
+activate :deploy do |deploy|
+  # git information
+  deploy.method = :git
+  deploy.remote = 'git@github.com:lusth-music/lusth-music.github.io.git'
+  deploy.branch = 'master'
+  deploy.strategy = :force_push
+
+  deploy.build_before = true
+end
