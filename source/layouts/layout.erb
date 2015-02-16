@@ -13,7 +13,16 @@
     <%= javascript_include_tag  "all" %>
   </head>
   
-  <body class="<%= page_classes %>">
-    <%= yield %>
+  <body class="<%= page_classes %> constrain">
+    <header>
+      <div class="logo">
+        <h1>Turing and the Tapeworms</h1>
+      </div>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+    </footer>
   </body>
 </html>
